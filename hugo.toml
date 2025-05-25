@@ -1,0 +1,26 @@
+baseURL = 'https://Zn83.github.io/'
+languageCode = 'fr-fr'
+title = 'Mon Portfolio'
+theme = 'PaperMod'
+
+[params]
+  author = "Ton Nom"
+  showReadingTime = true
+  showCodeCopyButtons = true
+  defaultTheme = "auto"
+
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Projets"
+    url = "/projets/"
+    weight = 2
+
+  [[menu.main]]
+    name = "À propos"
+    url = "/about/"
+    weight = 3
