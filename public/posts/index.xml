@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Mon Portfolio</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://Zn83.github.io/posts/</link>
     <description>Recent content in Posts on Mon Portfolio</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 25 May 2025 21:33:51 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>http://localhost:1313/posts/test/</link>
-      <pubDate>Sun, 25 May 2025 21:33:51 +0200</pubDate>
-      <guid>http://localhost:1313/posts/test/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://Zn83.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
