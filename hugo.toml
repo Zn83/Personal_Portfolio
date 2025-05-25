@@ -21,6 +21,6 @@ theme = 'PaperMod'
     weight = 2
 
   [[menu.main]]
-    name = "À propos"
+    name = "About Me"
     url = "/about/"
     weight = 3
