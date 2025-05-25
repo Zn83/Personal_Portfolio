@@ -6,21 +6,7 @@
     <description>Recent content on Mon Portfolio</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 25 May 2025 21:33:58 +0200</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="https://Zn83.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://Zn83.github.io/about/</link>
-      <pubDate>Sun, 25 May 2025 21:33:58 +0200</pubDate>
-      <guid>https://Zn83.github.io/about/</guid>
-      <description>&lt;p&gt;Ceci est une page de test.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>https://Zn83.github.io/posts/test/</link>
-      <pubDate>Sun, 25 May 2025 21:33:51 +0200</pubDate>
-      <guid>https://Zn83.github.io/posts/test/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
