@@ -8,7 +8,6 @@ theme = "PaperMod"
     Title = "Bienvenue !", 
     Content = "Voici mon portfolio." 
   }
-  profileMode = true
 
   [params.profileMode]
     enabled = true
@@ -18,7 +17,6 @@ theme = "PaperMod"
     imageTitle = "Ma photo"
     imageWidth = 120
     imageHeight = 120
-
 [menu]
 [[menu.main]]
   identifier = "about"
