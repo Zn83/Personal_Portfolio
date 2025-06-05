@@ -4,7 +4,20 @@ title = "Mon Portfolio"
 theme = "PaperMod"
 
 [params]
-  homeInfoParams = { Title = "Bienvenue !", Content = "Voici mon portfolio." }
+  homeInfoParams = { 
+    Title = "Bienvenue !", 
+    Content = "Voici mon portfolio." 
+  }
+  profileMode = true
+
+  [params.profileMode]
+    enabled = true
+    title = "Zn83"
+    subtitle = "Développeur, créatif, curieux."
+    imageUrl = "images/Corporate_detouree.png"
+    imageTitle = "Ma photo"
+    imageWidth = 120
+    imageHeight = 120
 
 [menu]
 [[menu.main]]
