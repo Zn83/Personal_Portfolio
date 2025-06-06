@@ -9,9 +9,9 @@ theme = "PaperMod"
 
 [params.profileMode]
   enabled = true
-  title = "Zn83"
+  title = "Zian"
   subtitle = "Développeur, créatif, curieux."
-  imageUrl = "images/Corporate_detouree.png"
+  imageUrl = "images/Corporate_detouree_carree.png"
   imageTitle = "Ma photo"
   imageWidth = 120
   imageHeight = 120
