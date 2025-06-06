@@ -3,9 +3,6 @@ languageCode = "fr-fr"
 title = "Mon Portfolio"
 theme = "PaperMod"
 
-[params]
-  profileMode = true
-
 [params.homeInfoParams]
   Title = "Bienvenue !"
   Content = "Voici mon portfolio."
