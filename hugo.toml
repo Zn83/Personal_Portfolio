@@ -17,7 +17,7 @@ theme = "PaperMod"
     imageTitle = "Ma photo"
     imageWidth = 120
     imageHeight = 120
-[menu]
+
 [[menu.main]]
   identifier = "about"
   name = "À propos"
