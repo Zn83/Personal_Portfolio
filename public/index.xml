@@ -6,7 +6,21 @@
     <description>Recent content on Mon Portfolio</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>fr-fr</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 14:01:38 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/Personal_Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/Personal_Portfolio/about/</link>
+      <pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate>
+      <guid>http://localhost:1313/Personal_Portfolio/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mon Premier Article</title>
+      <link>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</link>
+      <pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate>
+      <guid>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
