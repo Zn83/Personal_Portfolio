@@ -1,0 +1,16 @@
+/* Soulignement du menu actif */
+.menu a.active {
+  border-bottom: 2px solid #000;
+  transition: all 0.2s ease;
+}
+
+/* Hover des éléments de menu */
+.menu a:hover {
+  transform: translateY(-2px);
+  color: #007acc;
+}
+
+/* Dark mode */
+.dark .menu a.active {
+  border-bottom: 2px solid #fff;
+}

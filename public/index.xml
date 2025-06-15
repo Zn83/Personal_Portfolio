@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Mon Portfolio</title>
+    <title>Accueil on Personal Portfolio</title>
     <link>http://localhost:1313/Personal_Portfolio/</link>
-    <description>Recent content on Mon Portfolio</description>
+    <description>Recent content in Accueil on Personal Portfolio</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>fr-fr</language>
     <lastBuildDate>Thu, 05 Jun 2025 14:01:38 +0200</lastBuildDate>
@@ -16,7 +16,7 @@
       <description></description>
     </item>
     <item>
-      <title>Mon Premier Article</title>
+      <title>My First Article</title>
       <link>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</link>
       <pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate>
       <guid>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</guid>

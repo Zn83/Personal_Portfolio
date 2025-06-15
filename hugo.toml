@@ -1,26 +1,28 @@
 baseURL = "https://zn83.github.io/Personal_Portfolio/"
 languageCode = "fr-fr"
-title = "Mon Portfolio"
+title = "Personal Portfolio"
 theme = "PaperMod"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params.homeInfoParams]
   Title = "Bienvenue !"
-  Content = "Voici mon portfolio."
+  Content = "Voici mon portfolioooooo."
 
 [params.profileMode]
-  enabled = true
-  title = "Zian"
-  subtitle = "Développeur, créatif, curieux."
-  imageUrl = "images/Corporate_detouree_carree.png"
-  imageTitle = "Ma photo"
-  imageWidth = 120
-  imageHeight = 120
+  enabled = false
+
+[params.assets]
+  customCSS = ["css/custom.css"]
 
 [menu]
   [[menu.main]]
     identifier = "about"
     name = "À propos"
-    url = "/about/"
+    url = "/#about"
     weight = 1
 
   [[menu.main]]
