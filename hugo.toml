@@ -8,10 +8,6 @@ theme = "PaperMod"
     [markup.goldmark.renderer]
       unsafe = true
 
-[params.homeInfoParams]
-  Title = "Bienvenue !"
-  Content = "Voici mon portfolioooooo."
-
 [params.profileMode]
   enabled = false
 
@@ -21,7 +17,7 @@ theme = "PaperMod"
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "À propos"
+    name = "About Me"
     url = "/#about"
     weight = 1
 

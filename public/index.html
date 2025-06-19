@@ -101,8 +101,8 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/Personal_Portfolio/#about" title="À propos">
-                    <span>À propos</span>
+                <a href="http://localhost:1313/Personal_Portfolio/#about" title="About Me">
+                    <span>About Me</span>
                 </a>
             </li>
             <li>
@@ -114,55 +114,65 @@
     </nav>
 </header>
 <main class="main">
-  <div style="text-align:center; margin-top:2rem;">
-  <img src="/Personal_Portfolio/images/Corporate_detouree_carree.png"
-       alt="Ma photo"
-       style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
-  <h1 style="transition: transform 0.3s ease; display: inline-block;"
-      onmouseover="this.style.transform='scale(1.1)'"
-      onmouseout="this.style.transform='scale(1)'">
-    Zian
-  </h1>
-  <h2>Digital Transformation Engineer<span style="color:#9013fe">.</span></h2>
-</div>
-<style>
-  .tabs {
-    max-width: 800px;
-    margin: 2rem auto;
-  }
-  input[type="radio"] {
-    display: none;
-  }
-  .tab-label {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    background: #787878;
-    margin-right: 5px;
-    border-radius: 5px 5px 0 0;
-  }
-  .tab-content {
-    border: 1px solid #eee;
-    padding: 1rem;
-    display: none;
-    background: #f9f9f9;
-    border-radius: 0 0 5px 5px;
-  }
-  #tab1:checked ~ .content #content1,
-  #tab2:checked ~ .content #content2,
-  #tab3:checked ~ .content #content3 {
-    display: block;
-  }
-  #tab1:checked ~ .tabs-nav label[for="tab1"],
-  #tab2:checked ~ .tabs-nav label[for="tab2"],
-  #tab3:checked ~ .tabs-nav label[for="tab3"] {
-    background: #ddd;
-  }
-</style>
-<section id="about" style="margin-top: 4rem;">
-  <h2 style="text-align:left;">À propos</h2>
   <style>
-/* Container global */
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* .profile-text h1 { background: rgba(255,0,0,0.1); }
+.profile-text h2 { background: rgba(0,255,0,0.1); }
+.profile-text h4 { background: rgba(0,0,255,0.1); } */
+
+.profile-text h1 {
+  margin: 2;
+  font-size: 2rem;
+}
+
+.profile-text h2 {
+  margin: 1.5rem 0 0;
+  font-weight: 400;
+}
+
+.profile-text h4 {
+  margin: 1rem 0 0; /* Top Left Bottom */
+  font-weight: 200;
+}
+
+#typed-text {
+  white-space: pre-wrap;
+  display: inline;
+}
+
+#cursor {
+  animation: blink 1s infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Les tabs */
 .tabs {
   max-width: 800px;
   margin: 2rem auto;
@@ -180,7 +190,7 @@ input[type="radio"] {
   display: flex;
   justify-content: flex-start; /* Aligne à gauche */
   gap: 0rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 /* Tab labels */
@@ -219,7 +229,8 @@ input[type="radio"] {
 /* Onglet actif */
 #tab1:checked ~ .tabs-nav label[for="tab1"]::after,
 #tab2:checked ~ .tabs-nav label[for="tab2"]::after,
-#tab3:checked ~ .tabs-nav label[for="tab3"]::after {
+#tab3:checked ~ .tabs-nav label[for="tab3"]::after,
+#tab4:checked ~ .tabs-nav label[for="tab4"]::after {
   width: 100%;
 }
 
@@ -240,8 +251,16 @@ input[type="radio"] {
 
 #tab1:checked ~ .content #content1,
 #tab2:checked ~ .content #content2,
-#tab3:checked ~ .content #content3 {
+#tab3:checked ~ .content #content3,
+#tab4:checked ~ .content #content4 {
   display: block;
+}
+
+/* 2 colonnes pour skills */
+.skills-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 /* 🌙 Dark mode */
@@ -263,41 +282,129 @@ input[type="radio"] {
 .dark .tab-label::after {
   background: #fff;
 }
+
+.date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.dark .date {
+  color: #aaa;
+}
+
+
+</style>
+<!-- Bloc centré avec photo -->
+<div class="profile-container">
+  <img src="/Personal_Portfolio/images/Corporate_detouree_carree.png"
+       alt="Ma photo" class="profile-photo"/>
+  <div class="profile-text">
+    <h1 style="transition: transform 0.3s ease;"
+        onmouseover="this.style.transform='scale(1.1)'"
+        onmouseout="this.style.transform='scale(1)'">Zian Cassassolles</h1>
+    <h2 style="transition: transform 0.3s ease"
+        onmouseover="this.style.transform='scale(1.1)'"
+        onmouseout="this.style.transform='scale(1)'">Digital Transformation Engineer<span style="color:#9013fe">.</span></h2>
+    <h4 style="max-width: 600px;min-height: 7rem;"><span style="color:#9013fe">></span><span id="typed-text" style="white-space: pre-wrap;"></span><span id="cursor">|</span>
+    </h4>
+  </div>
+</div>
+<section id="about" style="margin-top: 4rem;">
+  <h2 style="text-align:left;">About Me</h2>
+  <style>
+
 </style>
   <div class="tabs">
     <input type="radio" name="tabs" id="tab1" checked>
     <input type="radio" name="tabs" id="tab2">
     <input type="radio" name="tabs" id="tab3">
+    <input type="radio" name="tabs" id="tab4">
   <div class="tabs-nav">
       <div class="tabs-nav">
         <label for="tab1" class="tab-label">💻 Skills</label>
-        <label for="tab2" class="tab-label">🎓 Education</label>
-        <label for="tab3" class="tab-label">📜 Certifications</label>
+        <label for="tab2" class="tab-label">💼 Experiences</label>
+        <label for="tab3" class="tab-label">🎓 Education</label>
+        <label for="tab4" class="tab-label">📜 Certifications</label>
 </div>
     </div>
   <div class="content">
       <div id="content1" class="tab-content">
-        <ul>
-          <li>Data Analysis</li>
-          <li>Project Management</li>
-          <li>HTML / CSS / JavaScript</li>
-          <li>Python / Django</li>
-        </ul>
+        <div class="skills-columns">
+          <ul>
+            <h3 style="text-align:center;margin-bottom: 1rem">🔧  Competencies</h3>
+            <li>Data Analysis</li>
+            <li>Project Management</li>
+          </ul>
+          <ul>
+            <h3 style="text-align:center;margin-bottom: 1rem">⚙️ Tools</h3>
+            <li>Ms Office, PowerBI, PowerApps</li>
+            <li>Python - Django, Pandas</li>
+            <li>HTML / CSS / JavaScript</li>
+          </ul>
+        </div>
       </div>
       <div id="content2" class="tab-content">
         <ul>
-          <li>M. Sc - Linköping Institute of Technology – Sweden</li>
-          <li>M.Sc - Arts et Métiers ParisTech – France</li>
+            <li><span class="date">2024 – Present</span><span> Digital Transformation Engineer - Alstom - Denmark</span></li>
+            <li><span class="date">2022 – 2024</span><span> Test and Commissioning Engineer - Alstom - Denmark</span></li>
         </ul>
       </div>
       <div id="content3" class="tab-content">
+        <ul style="padding: 0;">
+          <li><span class="date">2021 – 2022</span><span> M. Sc - Linköping Institute of Technology – Sweden</span></li>
+          <li><span class="date">2019 – 2022</span><span> M.Sc - Arts et Métiers ParisTech – France</span></li>
+        </ul>
+      </div>
+      <div id="content4" class="tab-content">
         <ul>
-          <li>Alstom - Six Sigma Yellow Belt Certification</li>
+          <li><span class="date">2024</span><span> Alstom - Six Sigma Yellow Belt Certification</span></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
+<script>
+  const phrases = [
+    " From raw data to real decisions — turning numbers into narratives that move business forward.",
+    " Digital transformation starts with data — because insight drives impact.",
+    " You can’t optimize what you don’t understand — and data is the language of understanding."
+  ];
+
+  const textEl = document.getElementById("typed-text");
+  const cursorEl = document.getElementById("cursor");
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+    const currentPhrase = phrases[phraseIndex];
+    const displayedText = currentPhrase.substring(0, charIndex);
+    textEl.textContent = displayedText;
+
+    if (!isDeleting && charIndex < currentPhrase.length) {
+      charIndex++;
+      setTimeout(type, 20);
+    } else if (!isDeleting && charIndex === currentPhrase.length) {
+      // Wait before deleting
+      setTimeout(() => {
+        isDeleting = true;
+        type();
+      }, 4000);
+    } else if (isDeleting && charIndex > 0) {
+      charIndex--;
+      setTimeout(type, 10);
+    } else if (isDeleting && charIndex === 0) {
+      // Move to next phrase
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(type, 500);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    type();
+  });
+</script>
 
     </main>
     
