@@ -26,3 +26,11 @@ theme = "PaperMod"
     name = "Articles"
     url = "/posts/"
     weight = 2
+
+  [[menu.main]]
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/zian-cassassolles/"
+    weight = 3
+    pre = "<i class='fab fa-linkedin' style='margin-right: 4px;'></i>"
+    params = { target = "_blank" }
