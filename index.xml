@@ -1,1 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Accueil on Personal Portfolio</title><link>https://zn83.github.io/Personal_Portfolio/</link><description>Recent content in Accueil on Personal Portfolio</description><generator>Hugo -- 0.147.8</generator><language>fr-fr</language><lastBuildDate>Thu, 05 Jun 2025 14:01:38 +0200</lastBuildDate><atom:link href="https://zn83.github.io/Personal_Portfolio/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://zn83.github.io/Personal_Portfolio/about/</link><pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate><guid>https://zn83.github.io/Personal_Portfolio/about/</guid><description/></item><item><title>My First Article</title><link>https://zn83.github.io/Personal_Portfolio/posts/mon-premier-article/</link><pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate><guid>https://zn83.github.io/Personal_Portfolio/posts/mon-premier-article/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Accueil on Personal Portfolio</title><link>https://zn83.github.io/Personal_Portfolio/</link><description>Recent content in Accueil on Personal Portfolio</description><generator>Hugo -- 0.147.9</generator><language>fr-fr</language><lastBuildDate>Thu, 05 Jun 2025 14:01:38 +0200</lastBuildDate><atom:link href="https://zn83.github.io/Personal_Portfolio/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://zn83.github.io/Personal_Portfolio/about/</link><pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate><guid>https://zn83.github.io/Personal_Portfolio/about/</guid><description/></item><item><title>My First Article</title><link>https://zn83.github.io/Personal_Portfolio/posts/mon-premier-article/</link><pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate><guid>https://zn83.github.io/Personal_Portfolio/posts/mon-premier-article/</guid><description/></item><item><title>Drone</title><link>https://zn83.github.io/Personal_Portfolio/drone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zn83.github.io/Personal_Portfolio/drone/</guid><description>&lt;section class="parallax-section">
+&lt;div class="parallax-image bg-drone1">&lt;/div>
+&lt;div class="parallax-caption">
+&lt;h2>Vue aérienne #1&lt;/h2>
+&lt;p>Henningsvær typical view&lt;/p>
+&lt;/div>
+&lt;/section>
+&lt;section class="parallax-section">
+&lt;div class="parallax-image" style="background-image: url('/Personal_Portfolio/images/drone2.jpg');">&lt;/div>
+&lt;div class="parallax-caption">
+&lt;h2>Vue aérienne #2&lt;/h2>
+&lt;p>Flying over Vestvågøya&lt;/p>
+&lt;/div>
+&lt;/section>
+&lt;div>Drone operations comply with EU Regulation 2019/947.
+The pilot is registered with the French Civil Aviation Authority (DGAC) as a UAS operator in France with the DGAC and holds an A1/A3 open category certification in accordance with EASA regulations and has completed the A1/A3 certification for open category flights.
+All media was captured using a sub-250g drone.&lt;/div></description></item></channel></rss>
