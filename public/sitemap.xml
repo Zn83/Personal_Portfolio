@@ -16,6 +16,8 @@
   </url><url>
     <loc>http://localhost:1313/Personal_Portfolio/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/Personal_Portfolio/drone/</loc>
+  </url><url>
     <loc>http://localhost:1313/Personal_Portfolio/tags/</loc>
   </url>
 </urlset>

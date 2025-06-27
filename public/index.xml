@@ -22,5 +22,31 @@
       <guid>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Drone</title>
+      <link>http://localhost:1313/Personal_Portfolio/drone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Personal_Portfolio/drone/</guid>
+      <description>&lt;section class=&#34;parallax-section&#34;&gt;
+  &lt;div class=&#34;parallax-image bg-drone1&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;parallax-caption&#34;&gt;
+    &lt;h2&gt;Vue aérienne #1&lt;/h2&gt;
+    &lt;p&gt;Henningsvær typical view&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;parallax-section&#34;&gt;
+  &lt;div class=&#34;parallax-image&#34; style=&#34;background-image: url(&#39;/Personal_Portfolio/images/drone2.jpg&#39;);&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;parallax-caption&#34;&gt;
+    &lt;h2&gt;Vue aérienne #2&lt;/h2&gt;
+    &lt;p&gt;Flying over Vestvågøya&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+
+&lt;div&gt;Drone operations comply with EU Regulation 2019/947.
+  The pilot is registered with the French Civil Aviation Authority (DGAC) as a UAS operator in France with the DGAC and holds an A1/A3 open category certification in accordance with EASA regulations and has completed the A1/A3 certification for open category flights.
+  All media was captured using a sub-250g drone.&lt;/div&gt;</description>
+    </item>
   </channel>
 </rss>

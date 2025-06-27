@@ -8,6 +8,9 @@ theme = "PaperMod"
     [markup.goldmark.renderer]
       unsafe = true
 
+[params]
+  env = "production"
+
 [params.profileMode]
   enabled = false
 
@@ -28,9 +31,15 @@ theme = "PaperMod"
     weight = 2
 
   [[menu.main]]
+  identifier = "drone"
+  name = "Drone"
+  url = "/drone/"
+  weight = 4
+
+  [[menu.main]]
     identifier = "linkedin"
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/zian-cassassolles/"
-    weight = 3
+    weight = 5
     pre = "<i class='fab fa-linkedin' style='margin-right: 4px;'></i>"
     params = { target = "_blank" }
