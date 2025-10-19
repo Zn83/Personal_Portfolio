@@ -10,6 +10,8 @@ theme = "PaperMod"
 
 [params]
   env = "production"
+  defaultTheme = "dark"
+  disableThemeToggle = true
 
 [params.profileMode]
   enabled = false
@@ -25,21 +27,9 @@ theme = "PaperMod"
     weight = 1
 
   [[menu.main]]
-    identifier = "posts"
-    name = "Articles"
-    url = "/posts/"
-    weight = 2
-
-  [[menu.main]]
-  identifier = "drone"
-  name = "Drone"
-  url = "/drone/"
-  weight = 4
-
-  [[menu.main]]
     identifier = "linkedin"
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/zian-cassassolles/"
-    weight = 5
+    weight = 2
     pre = "<i class='fab fa-linkedin' style='margin-right: 4px;'></i>"
     params = { target = "_blank" }

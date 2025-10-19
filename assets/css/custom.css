@@ -21,43 +21,296 @@
   margin-right: calc(-50vw + 50%);
 }
 
-.parallax-section {
-  position: relative;
-  height: 200vh;
-  overflow: hidden;
-}
-
-.parallax-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;         /* prend toute la largeur du viewport */
-  height: 200vh;        /* prend toute la hauteur du viewport */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: -1;
-}
-
-.parallax-caption {
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.drone-footer {
-  background-color: #222;
-  color: #aaa;
-  font-style: italic;
-  font-size: 0.85rem;
-  padding: 2rem 1rem;
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   max-width: 900px;
   margin: 2rem auto;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* .profile-text h1 { background: rgba(255,0,0,0.1); }
+.profile-text h2 { background: rgba(0,255,0,0.1); }
+.profile-text h4 { background: rgba(0,0,255,0.1); } */
+
+.profile-text h1 {
+  margin: 2;
+  font-size: 2rem;
+}
+
+.profile-text h2 {
+  margin: 1.5rem 0 0;
+  font-weight: 400;
+}
+
+.profile-text h4 {
+  margin: 1rem 0 0; /* Top Left Bottom */
+  font-weight: 200;
+}
+
+#typed-text {
+  white-space: pre-wrap;
+  display: inline;
+}
+
+#cursor {
+  animation: blink 1s infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Les tabs */
+.tabs {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: inherit;
+}
+
+/* On masque les radio buttons mais on garde leur marge à gauche */
+input[type="radio"] {
+  display: none;
+  margin-left: 1rem;
+}
+
+/* Navigation */
+.tabs-nav {
+  display: flex;
+  justify-content: flex-start; /* Aligne à gauche */
+  gap: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Tab labels */
+.tab-label {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #eee;
+  color: #000;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+}
+
+.tab-label:hover {
+  background-color: #ddd;
+  transform: translateY(-2px);
+}
+
+/* Soulignement animé */
+.tab-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.tab-label:hover::after {
+  width: 100%;
+}
+
+/* Onglet actif */
+#tab1:checked ~ .tabs-nav label[for="tab1"]::after,
+#tab2:checked ~ .tabs-nav label[for="tab2"]::after,
+#tab3:checked ~ .tabs-nav label[for="tab3"]::after,
+#tab4:checked ~ .tabs-nav label[for="tab4"]::after {
+  width: 100%;
+}
+
+#tab1:checked ~ .content #content1,
+#tab2:checked ~ .content #content2,
+#tab3:checked ~ .content #content3,
+#tab4:checked ~ .content #content4 {
+  display: block;
+}
+
+#tab2-1:checked ~ .content #content2-1,
+#tab2-2:checked ~ .content #content2-2,
+#tab2-3:checked ~ .content #content2-3 {
+  display: block;
+}
+
+.separateur{
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Contenu */
+.tab-content {
+  display: none;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 0 8px 8px 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Style par défaut des <li> — avec puces */
+.tab-content ul li {
+  padding: 0.3rem 0;
+  
+}
+
+/* Cas particulier pour les intitulés de poste */
+.tab-content ul h3.tab-title-entry {
+  list-style-type: none;       /* Supprime la puce */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0rem;
+}
+
+/* Style de la date */
+.tab-content .date {
+  /* font-weight: 500;  */
+  color: #9013fe;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.tab-content ul li.location {
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0rem;
+  position: relative;
+  padding-bottom: 0.3rem;
+  padding-top: 0rem;
+  /*padding: 0rem 0; /* espace entre texte et ligne */
+}
+
+.tab-content ul li.location::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+.tab-content ul li.item {
+  font-size: 0.9rem;
+  align-items: center;
+  gap: 0rem;
+  position: relative;
+  padding: 0.3rem 0;
+  /*padding: 0rem 0; /* espace entre texte et ligne */
+}
+
+.tab-content ul li.last-item {
+  margin-bottom: 1rem;
+}
+
+.with-separator {
+  position: relative;
+  text-align: center;
+  padding-top: 1rem; /* espace pour la ligne */
+}
+
+.with-separator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;       /* longueur de la ligne */
+  height: 1px;       /* épaisseur */
+  background: rgba(255,255,255,0.4); /* couleur adaptable */
+  border-radius: 2px;
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* 2 colonnes pour skills */
+.skills-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* 🌙 Dark mode */
+.dark .tab-label {
+  background: #333;
+  color: #fff;
+}
+
+.dark .tab-label:hover {
+  background: #444;
+}
+
+.dark .tab-content {
+  background: #1e1e1e;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+.dark .tab-label::after {
+  background: #fff;
+}
+
+
+.content-wrapper {
+  max-width: 1500px;        /* largeur centrale */
+  margin: 0 auto;           /* centrer */
+  padding: 2rem;            /* espace intérieur */
+  background-color: #111;   /* fond noir */
+  border-radius: 12px;      /* angles arrondis */
+  box-shadow: 0 0 40px rgba(0,0,0,0.5); /* ombre légère */
+}
+
+/* Intro style */
+.intro-cv {
+  position: relative;
+  margin-bottom: 0rem;
+  padding: 1.5rem 0.5rem;
+  font-size: 1rem;
   line-height: 1.6;
-  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+/* Location top-right */
+.intro-cv .location {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #9013fe;
 }
