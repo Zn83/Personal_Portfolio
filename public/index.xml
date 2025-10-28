@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Accueil on Personal Portfolio</title>
-    <link>https://zn83.github.io/Personal_Portfolio/</link>
+    <link>http://localhost:1313/Personal_Portfolio/</link>
     <description>Recent content in Accueil on Personal Portfolio</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>fr-fr</language>
     <lastBuildDate>Thu, 05 Jun 2025 14:01:38 +0200</lastBuildDate>
-    <atom:link href="https://zn83.github.io/Personal_Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Personal_Portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://zn83.github.io/Personal_Portfolio/about/</link>
+      <link>http://localhost:1313/Personal_Portfolio/about/</link>
       <pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate>
-      <guid>https://zn83.github.io/Personal_Portfolio/about/</guid>
+      <guid>http://localhost:1313/Personal_Portfolio/about/</guid>
       <description></description>
     </item>
     <item>
       <title>My First Article</title>
-      <link>https://zn83.github.io/Personal_Portfolio/posts/mon-premier-article/</link>
+      <link>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</link>
       <pubDate>Thu, 05 Jun 2025 14:01:38 +0200</pubDate>
-      <guid>https://zn83.github.io/Personal_Portfolio/posts/mon-premier-article/</guid>
+      <guid>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</guid>
       <description></description>
     </item>
   </channel>

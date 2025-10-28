@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zn83.github.io/Personal_Portfolio/about/</loc>
+    <loc>http://localhost:1313/Personal_Portfolio/about/</loc>
     <lastmod>2025-06-05T14:01:38+02:00</lastmod>
   </url><url>
-    <loc>https://zn83.github.io/Personal_Portfolio/</loc>
+    <loc>http://localhost:1313/Personal_Portfolio/</loc>
     <lastmod>2025-06-05T14:01:38+02:00</lastmod>
   </url><url>
-    <loc>https://zn83.github.io/Personal_Portfolio/posts/</loc>
+    <loc>http://localhost:1313/Personal_Portfolio/posts/</loc>
     <lastmod>2025-06-05T14:01:38+02:00</lastmod>
   </url><url>
-    <loc>https://zn83.github.io/Personal_Portfolio/posts/mon-premier-article/</loc>
+    <loc>http://localhost:1313/Personal_Portfolio/posts/mon-premier-article/</loc>
     <lastmod>2025-06-05T14:01:38+02:00</lastmod>
   </url><url>
-    <loc>https://zn83.github.io/Personal_Portfolio/categories/</loc>
+    <loc>http://localhost:1313/Personal_Portfolio/categories/</loc>
   </url><url>
-    <loc>https://zn83.github.io/Personal_Portfolio/tags/</loc>
+    <loc>http://localhost:1313/Personal_Portfolio/tags/</loc>
   </url>
 </urlset>
