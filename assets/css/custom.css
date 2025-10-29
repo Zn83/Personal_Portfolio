@@ -159,6 +159,18 @@ input[type="radio"] {
   display: block;
 }
 
+#tab3-1:checked ~ .tabs-nav label[for="tab3-1"]::after,
+#tab3-2:checked ~ .tabs-nav label[for="tab3-2"]::after,
+#tab3-3:checked ~ .tabs-nav label[for="tab3-3"]::after{
+  width: 100%;
+}
+
+#tab3-1:checked ~ .content #content3-1,
+#tab3-2:checked ~ .content #content3-2,
+#tab3-3:checked ~ .content #content3-3 {
+  display: block;
+}
+
 .separateur{
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -173,6 +185,16 @@ input[type="radio"] {
   display: none;
   padding: 2rem;
   min-height: 550px;
+  background: #f9f9f9;
+  border-radius: 0 8px 8px 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+.tab-content3 {
+  display: none;
+  padding: 2rem;
+  min-height: 300px;
   background: #f9f9f9;
   border-radius: 0 8px 8px 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -229,7 +251,7 @@ input[type="radio"] {
   /*padding: 0rem 0; /* espace entre texte et ligne */
 }
 
-.tab-content ul li.location::after {
+.tab-content ul li.small_separator::after {
   content: "";
   position: absolute;
   left: 0;
@@ -367,6 +389,12 @@ input[type="radio"] {
 }
 
 .dark .tab-content {
+  background: #1e1e1e;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+.dark .tab-content3 {
   background: #1e1e1e;
   color: #eee;
   border: 1px solid #444;

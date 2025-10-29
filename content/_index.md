@@ -56,14 +56,14 @@ title: "Accueil"
         <ul>
           <h3 class="tab-title-entry">Digital Transformation Engineer<span class="date">2024 – Present</span>
           </h3>
-          <li class="location">Alstom - Copenhagen, Denmark</li>
+          <li class="location small_separator">Alstom - Copenhagen, Denmark</li>
             <li class="item">Developed a global project dashboard to track complete field work progress by designing and implementing an ETL process and building a robust data pipeline, enhancing project transparency and decision-making.</li>
             <li class="item">Designed and developed a web platform for real-time fleet monitoring across the Danish railway network (350 trains), managing the complete data pipeline and architecture to deliver accurate, live visibility for operators and maintenance teams.</li>
             <li class="item last-item">Designed a data-driven troubleshooting tool for engineering department that analyses complete train event logs, improving root-cause analysis by identifying errors, affected trains, and measuring the impact of maintenance actions.</li>
         </ul>
         <ul>
           <h3 class="tab-title-entry with-separator">Test and Commissioning Engineer</span> <span class="date">2022 – 2024</h3>
-          <li class="location">Alstom - Copenhagen, Denmark</li>
+          <li class="location small_separator">Alstom - Copenhagen, Denmark</li>
             <li class="item">Conducted T&C on trackside components and trains for ETCS signalling system implementation, managing open points through full commissioning.</li>
             <li class="item">Optimized ETCS testing processes by developing data workflows that improved data traceability and quality, supporting better decision-making.</li>
             <li class="item last-item">Oversaw T&C inspections and project planning for mid-life maintenance of the Copenhagen Metro fleet (34 vehicles)</li>
@@ -72,10 +72,10 @@ title: "Accueil"
       <div id="content2" class="tab-content">
         <ul>
           <h3 class="tab-title-entry">M. Sc - Linköping Institute of Technology<span class="date">2021 – 2022</span></h3>
-          <li class="location">Linköping, Sweden</li>
+          <li class="location small_separator">Linköping, Sweden</li>
           <li class="item last-item">International studies program in industrial engineering and management.</li>
           <h3 class="tab-title-entry with-separator">M.Sc - Arts et Métiers ParisTech<span class="date">2019 – 2022</span></h3>
-          <li class="location">Aix en Provence, France</li>
+          <li class="location small_separator">Aix en Provence, France</li>
           <li class="item">Among top 10 French engineering schools.</li>
           <li class="item">Mechanical and industrial engineering and management.</li>
           <li class="item last-item">Ranked <b>34 of 1144 students</b> – Valedictorian – Magna Cum Laude 🥈</li>
@@ -84,10 +84,12 @@ title: "Accueil"
       <div id="content3" class="tab-content">
         <ul>
           <h3 class="tab-title-entry">Six Sigma Yellow Belt Certification<span class="date">2024</span></h3>
-          <li class="location">Alstom</li>
+          <li class="location small_separator">Alstom</li>
           <li class="item">40% reduction in testing time by digitalising workflows and automating processes.</li>
           <li class="item">Enhanced operational excellence and data traceability.</li>
           <li class="item last-item">Enabling full adoption of optimized procedures across Denmark projects.</li>
+          <h3 class="tab-title-entry with-separator">A1/A3 Open Sub-Category Drone License<span class="date">2025</span></h3>
+          <li class="location">European Union Aviation Safety Agency (EASA)</li>
         </ul>
       </div>
     </div>
@@ -105,7 +107,7 @@ title: "Accueil"
     <div class="tabs-nav">
       <label for="tab2-1" class="tab-label">💻 Skills</label>
       <label for="tab2-2" class="tab-label">⚙️ Tools</label>
-      <label for="tab2-3" class="tab-label">🇫🇷 Languages</label>
+      <label for="tab2-3" class="tab-label">🤝 Languages & Commitments</label>
     </div>
     <div class="content">
       <div id="content2-1" class="tab-content">
@@ -115,7 +117,7 @@ title: "Accueil"
             <li class="item-double-column">Data analysis and visualization</li>
             <li class="item-double-column">ETL processes</li>
             <li class="item-double-column">Object oriented programming (Python, VB.Net, C#)</li>
-            <li class="item-double-column">Machine Learning</li>
+            <li class="item-double-column">Machine Learning (Scikit-learn)</li>
             <li class="item-double-column">Web (HTML, CSS, Js)</li>
           </ul>
           <ul>
@@ -170,10 +172,42 @@ title: "Accueil"
         <li class="item-triple-column precision2">Intermediate - B1</li>
         </ul>
         </div>
+        <ul>
+        <h3 class="tab-title-entry with-separator">Academic Achievement</h3>
+        <li class="item" style="margin-bottom:1rem">Ranked top 3% students of my engineering school. – Magna Cum Laude</li>
+        <h3 class="tab-title-entry with-separator">Learning/On-going certifications</h3></li>
+        <li class="item">Google Project Management Certificate</li>
+        <li class="item">Microsoft PL300 – Power BI Data Analysis</li>
+        <li class="item">Corporate and Market Finance</li>
+        <li class="item">Machine Learning</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Troisieme tab -->
+<!-- <section id="third-tabs" style="margin-top: 1rem;">
+  <h2 style="text-align:left;">Hobbies</h2>
+
+  <div class="tabs">
+    <input type="radio" name="tabs3" id="tab3-1" checked>
+    <input type="radio" name="tabs3" id="tab3-2">
+    <input type="radio" name="tabs3" id="tab3-3">
+    <div class="tabs-nav">
+      <label for="tab3-1" class="tab-label">💻 Creations & Reading</label>
+      <label for="tab3-2" class="tab-label">⚙️ Small Projects</label>
+      <label for="tab3-3" class="tab-label">🤝 Sport</label>
+    </div>
+    <div class="content">
+      <div id="content3-1" class="tab-content3">
+      </div>
+      <div id="content3-2" class="tab-content3">
+      </div>
+      <div id="content3-3" class="tab-content3">
+    </div>
+  </div>
+</section> -->
 
 <!-- Script typing machine -->
 <script>
